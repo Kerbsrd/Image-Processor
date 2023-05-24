@@ -1,0 +1,19 @@
+load res/help.ppm pic
+red-component pic red-pic
+green-component pic green-pic
+blue-component pic blue-pic
+vertical-flip pic v-flip-pic
+horizontal-flip pic h-flip-pic
+value pic value-pic
+intensity pic intensity-pic
+luma pic luma-pic
+grey pic grey-pic
+sepia pic sepia-pic
+blur pic blurred-pic
+sharpen pic sharpened-pic
+red-component blurred-pic red-blurred-pic
+save res/new-pic.png red-blurred-pic
+save res/new-pic2.jpg luma-pic
+save res/new-pic3.bmp v-flip-pic
+save res/new-pic4.ppm blue-pic
+quit

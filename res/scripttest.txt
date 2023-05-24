@@ -1,0 +1,5 @@
+load res/help.ppm pic
+horizontal-flip pic hpic
+blur hpic bhpic
+save res/new.png bhpic
+quit

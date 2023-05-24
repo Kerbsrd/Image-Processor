@@ -1,0 +1,95 @@
+GUI BASED OPERATIONS (HW6)
+
+Working Components:
+1. Menu : The navigation menu bar contains all the operations. This is clickable and opens the
+following three submenus each with their own submenus that lead to the image processor program's
+operations being executed on the current image.
+   - Color Change
+     - Greyscale Color Values
+       - Red Greyscale
+       - Green Greyscale
+       - Blue Greyscale
+     - Brighten
+   - Filter
+     - Blur
+     - Sharpen
+     - Sepia
+     - Grey
+   - Transformation
+     - Horizontal Flip
+     - Vertical Flip
+2. Image Display : displays the current image that the user is working on in the main panel
+3. Message popups: displays text to the user regarding operations, errors, etc.
+
+In-progress
+4. Histogram support : Displays the histogram of the current image as a panel
+
+OLD SUPPORTED OPERATIONS IN THE MODEL (HW4 and HW5)
+
+1. load image-path image-name: Load an image from the specified path, which should include the name
+                               of the file. Can be a .ppm, .png, .jpg, .bmp, etc. [This command MUST
+                               be executed before any operations can be executed]
+
+2. save image-path image-name: Save the image with the given name to the specified path
+                               which should include the name of the file and the extension like
+                               .ppm, .png, .jpg, .bmp, etc. [the LOAD command must be executed
+                               before this command]
+
+3. red-component image-name dest-image-name: Create a greyscale image with the red-component of the
+                                             image with the given name and save it with a new
+                                             destination name. [the LOAD command must be executed
+                                             before this command]
+
+4. green-component image-name dest-image-name: Create a greyscale image with the green-component of
+                                               the image with the given name and save it with a new
+                                               destination name.[the LOAD command must be executed
+                                               before this command]
+
+5. blue-component image-name dest-image-name: Create a greyscale image with the blue-component of
+                                              the image  with the given name and save it with a new
+                                              destination name. [the LOAD command must be executed
+                                              before this command]
+
+6. horizontal-flip image-name dest-image-name: Flip an image with a given name horizontally and
+                                               save it with a new destination name.[the LOAD command
+                                               must be executed before this command]
+
+7. vertical-flip image-name dest-image-name: Flip an image with a given name vertically and save it
+                                             with a new destination name.[the LOAD command must be
+                                             executed before this command]
+
+8. value image-name dest-image-name: Creates a new greyscale image based on the greatest
+                                     value of each pixel's (r,g,b) components, from an image with a
+                                     given n. [the LOAD command must be executed before this
+                                     command]
+
+9. intensity image-name dest-image-name: Creates a new greyscale image based on the
+                                         average of each pixel's (r,g,b) components. [the LOAD
+                                         command must be executed before this command]
+
+10. luma image-name dest-image-name: Creates a new greyscale image based on a special
+                                     formula for each pixel's (r,g,b) components. [the LOAD command
+                                     must be executed before this command]
+
+11. brighten increment image-name dest-image-name: Create a new image by brightening the
+                                                   given image by the increment value (may
+                                                   be positive or negative) as long as it
+                                                   is in the valid (r,g,b) range, i.e.
+                                                   from 0 to 255. [the LOAD command must be executed
+                                                   before this command]
+
+12. blur image-name dest-image-name: Blurs a given image and saves it with a new destination name.
+                                     [the LOAD command must be executed before this command]
+
+13. sharpen image-name dest-image-name: Sharpens a given image and saves it with a new destination
+                                        name. [the LOAD command must be executed before this
+                                        command]
+
+14. greyscale image-name dest-image-name: Makes a given image greyscale and saves it with a new
+                                          destination name. [the LOAD command must be executed
+                                          before this command]
+
+15. sepia image-name dest-image-name : Makes a given image sepia and saves it with a new destination
+                                       name. [the LOAD command must be executed before this command]
+
+16. run-text-file file-path : Executes a list of valid commands from a text file at the given path.
